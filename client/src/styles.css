@@ -1,0 +1,229 @@
+/* ==========================================================================
+   BRITI SCIENTIFIC CHEMICAL E-COMMERCE - GLOBAL DESIGN SYSTEM
+   Professional Scientific & Laboratory B2B Visual Language
+   ========================================================================== */
+
+:root {
+  --primary-navy: #0b3b60;
+  --dark-navy: #062138;
+  --deep-blue: #0f4c81;
+  --accent-cyan: #0284c7;
+  --accent-blue: #0ea5e9;
+  --light-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --border-dark: #cbd5e1;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --success-green: #059669;
+  --warning-amber: #d97706;
+  --danger-red: #dc2626;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-bg);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography & Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-navy);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--deep-blue);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+a:hover {
+  color: var(--accent-cyan);
+}
+
+/* Primary Scientific Buttons */
+.btn-briti-primary {
+  background-color: var(--primary-navy);
+  color: #ffffff;
+  border: 1px solid var(--primary-navy);
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.btn-briti-primary:hover {
+  background-color: var(--dark-navy);
+  border-color: var(--dark-navy);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(11, 59, 96, 0.25);
+}
+
+.btn-briti-outline {
+  background-color: transparent;
+  color: var(--primary-navy);
+  border: 1.5px solid var(--primary-navy);
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.btn-briti-outline:hover {
+  background-color: var(--primary-navy);
+  color: #ffffff;
+}
+
+.btn-briti-accent {
+  background-color: var(--accent-cyan);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  border-radius: 4px;
+}
+.btn-briti-accent:hover {
+  background-color: #0369a1;
+  color: #ffffff;
+}
+
+/* Scientific Badges */
+.badge-cas {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.78rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.badge-purity {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  font-size: 0.78rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.badge-stock-in {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.badge-stock-low {
+  background-color: #fffbeb;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.badge-stock-out {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+/* Cards & Containers */
+.scientific-card {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.scientific-card:hover {
+  box-shadow: 0 8px 20px rgba(11, 59, 96, 0.08);
+}
+
+.scientific-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.scientific-table th {
+  background-color: #f8fafc;
+  color: var(--dark-navy);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.85rem 1rem;
+  border-bottom: 2px solid var(--border-color);
+}
+.scientific-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+.scientific-table tr:last-child td {
+  border-bottom: none;
+}
+.scientific-table tr:hover td {
+  background-color: #f8fafc;
+}
+
+/* Form Controls */
+.form-control:focus, .form-select:focus {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 0.2rem rgba(2, 132, 199, 0.15);
+}
+
+/* Breadcrumbs */
+.scientific-breadcrumb {
+  background: transparent;
+  padding: 0.75rem 0;
+  margin-bottom: 1rem;
+  font-size: 0.88rem;
+}
+.scientific-breadcrumb .breadcrumb-item.active {
+  color: var(--text-muted);
+}
+
+/* Hero Section */
+.hero-gradient {
+  background: linear-gradient(135deg, #062138 0%, #0b3b60 65%, #0f4c81 100%);
+  color: #ffffff;
+}
+
+/* Utilities */
+.text-navy {
+  color: var(--primary-navy) !important;
+}
+.bg-navy {
+  background-color: var(--primary-navy) !important;
+}
+.border-navy {
+  border-color: var(--primary-navy) !important;
+}
+
+/* Responsive Table Wrapper */
+.table-responsive-custom {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
