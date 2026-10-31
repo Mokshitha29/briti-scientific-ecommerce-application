@@ -133,6 +133,7 @@ const seedData = async () => {
         hsnCode: '29023000',
         gst: 18,
         image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&auto=format&fit=crop&q=60',
+        
         packings: [
           { size: '500 mL', price: 420, stock: 22 },
           { size: '2.5 L', price: 1650, stock: 14 }
